@@ -1,0 +1,14 @@
+PROJECT: DZIVISA V25.3 - Silent Lock PWA Scam Detector
+LIVE: https://dzivisa-v12.surge.sh
+STATUS: Production - Paste Works 100%
+BUILT: Termux Android - No PC
+FIX: Splash killed, Input->Textarea z-index 99999
+
+TEST:
+YEMAHARA kumbira airtime -> 100% SCAM
+bit.ly/prize-zw -> 100% SCAM
+https://example.com -> 100% LINK SCAM (if you want, add)
+0771234567 -> 100% SCAM
+Hello how are you -> 0% SAFE
+
+TECH: PWA, Vanilla JS, Surge.sh, Silent Lock Watermark

@@ -33,6 +33,7 @@ FILES=(
   "runner.js"
   "code-engine.js"
   "override.js"
+  "langs/dictionary.js"
   "plugins/loader.js"
   "plugins/power-ui.js"
   "plugins/reporter.js"

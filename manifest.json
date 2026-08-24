@@ -1,1 +1,21 @@
-{"name":"DZIVISA V30 FINAL AUTO PIN","short_name":"DZIVISA","start_url":"/?v=v30-final","display":"standalone","background_color":"#000000","theme_color":"#FFD700","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "name": "DZIVISA V30 FINAL AUTO PIN",
+  "short_name": "DZIVISA",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DD0E1",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "version": "1787410404"
+}

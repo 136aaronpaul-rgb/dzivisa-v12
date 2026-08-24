@@ -38,4 +38,23 @@ function speakMsg(){
   const i=document.getElementById('msgBar');
   if(i&&i.value.trim()) speakDzivisa(i.value);
 }
-console.log("🔊 Audio shield active");
+// Speed Optimization: Auto-focus search input
+window.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("msgBar");
+  if (input) input.focus();
+});
+
+// One-Tap Paste Injector
+async function handleQuickPaste() {
+  try {
+    const text = await navigator.clipboard.readText();
+    const input = document.getElementById("msgBar");
+    if (input) {
+      input.value = text;
+      if (typeof doScan === "function") doScan();
+    }
+  } catch (err) {
+    console.log("Clipboard read blocked, waiting for manual tap.");
+  }
+}
+console.log("🔊 Audio shield active console.log("🔊 Audio shield active"); speed optimizations armed");

@@ -1200,3 +1200,21 @@ const ZIM_FRAUD_DB=[
 { pattern: /zipit.*proof.*fake.*gweru.*now/i, risk: "CRITICAL", title: "ZIM Shield 600 gweru now", advice: "Dzivisa gweru: Usatumira." }
 ];
 // Extra Signature Hook
+
+// ====== CORE EXPANSION MATRIX: SCAM SIGNATURES 601-610 ======
+if (typeof ZIM_FRAUD_DB !== 'undefined') {
+  ZIM_FRAUD_DB.push(
+    { keyword: "inner circle", pattern: /inner\s*circle|investment\s*group|join\s*pool/i, risk: "HIGH", title: "Ponzi Scheme Pool", advice: "High risk financial pyramid scheme circulating via WhatsApp groups." },
+    { keyword: "mukando online", pattern: /mukando\s*online|whatsapp\s*mukando/i, risk: "HIGH", title: "Fake Digital Round-Robin", advice: "Unregulated informal lending circles often run away with cash pools." },
+    { keyword: "airtime transfer error", pattern: /wrong\s*airtime|tumira\s*kumashure|reversal\s*mambo/i, risk: "HIGH", title: "Airtime Reversal Hook", advice: "Scammers fake an airtime allocation error to steal your cash balance." },
+    { keyword: "inbox for currency", pattern: /inbox\s*for\s*rates|zig\s*to\s*usd\s*deal/i, risk: "HIGH", title: "Illegal Foreign Currency Dealer", advice: "Black market rate deals online often lead to counterfeit notes or wallet blocks." },
+    { keyword: "congratulations promotional winner", pattern: /promo\s*winner|econet\s*anniversary|draw\s*lucky/i, risk: "CRITICAL", title: "Fake Operator Promotion", advice: "MNOs never ask for processing fees to unlock promotional prize cash." },
+    { keyword: "agent pin reset pin", pattern: /agent\s*reset|pin\s*yakwiyiwa|change\s*pin\s*now/i, risk: "CRITICAL", title: "EcoCash Agent Impersonation", advice: "Official customer care support lines will never ask you to change your PIN." },
+    { keyword: "unlocked passport booking", pattern: /passport\s*slot|rg\s*office\s*connection/i, risk: "HIGH", title: "Fake Government Document Agent", advice: "Criminal elements collect application fees for fake emergency passport lines." },
+    { keyword: "secure remote job from home", pattern: /work\s*from\s*home\s*task|like\s*youtube\s*videos/i, risk: "HIGH", title: "Task-Based Salary Fraud", advice: "Fake recruiters force you to pay registration money to unlock salary dashboards." },
+    { keyword: "interbank transfer reference", pattern: /rtgs\s*confirmation|pop\s*pending|rtgs\s*reference/i, risk: "CRITICAL", title: "Fake Proof of Payment Vector", advice: "Always verify incoming bank transaction clearances inside your main ledger first." },
+    { keyword: "scholarship processing allocation", pattern: /scholarship\s*fee|study\s*abroad\s*deposit/i, risk: "HIGH", title: "Fake Student Bursary Scam", advice: "Legitimate educational funding boards do not demand cross-border activation cash."
+    }
+  );
+  console.log("⚙️ Threat signature array expanded successfully.");
+}

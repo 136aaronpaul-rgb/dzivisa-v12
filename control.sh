@@ -55,4 +55,21 @@ echo "✅ PASS (All cache files present on disk)"
 
 # 4. Trigger Surge CDN Sync
 echo "🚀 Compiling deployment to dzivisa-v12.surge.sh..."
-surge --project . --domain dzivisa-v12.surge.sh
+if surge --project . --domain dzivisa-v12.surge.sh; then
+    echo "✅ SURGE CDN DEPLOYMENT SUCCESSFUL!"
+    
+    # 5. AUTOMATED GIT CLOUD SYNCHRONIZATION MACRO
+    echo "☁️ Initiating automated Git repository cloud synchronization..."
+    git add .
+    git commit -m "🚀 AUTO-PIPELINE UPDATE: Passed V7 metrics assertions, synced live to Surge CDN & backed up to cloud repo" 2>/dev/null || echo "ℹ️ Workspace already clean. No changes to commit."
+    
+    echo "📦 Pushing production snapshot to GitHub (origin main)..."
+    if git push origin main; then
+        echo "🔒 GLOBAL DEV OPS LIFECYCLE SYNC COMPLETELY SECURED & GREEN!"
+    else
+        echo "⚠️ Git Push Warning: Remote backup target unavailable or network paused. Local changes are safely saved."
+    fi
+else
+    echo "❌ CDN DEPLOYMENT ENCOUNTERED AN ERROR. Pipeline aborted."
+    exit 1
+fi

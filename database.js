@@ -1199,3 +1199,4 @@ const ZIM_FRAUD_DB=[
 ,
 { pattern: /zipit.*proof.*fake.*gweru.*now/i, risk: "CRITICAL", title: "ZIM Shield 600 gweru now", advice: "Dzivisa gweru: Usatumira." }
 ];
+// Extra Signature Hook

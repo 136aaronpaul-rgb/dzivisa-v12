@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dzivisa-v12.6-mandatory-fixed-v6';
+const CACHE_NAME = 'dzivisa-v12.6-mandatory-fixed-v7';
 const urlsToCache = [
   './',
   './index.html',

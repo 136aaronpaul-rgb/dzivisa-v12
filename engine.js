@@ -1,5 +1,5 @@
 function dzivisaScan(text) {
-  if (!text || !text.trim()) {
+  if (!text ||!text.trim()) {
     return [{
       risk: "INFO",
       title: "Empty",
@@ -69,16 +69,15 @@ function dzivisaScan(text) {
     }];
   }
 
-  if (typeof ZIM_FRAUD_DB !== "undefined") {
-
+  if (typeof ZIM_FRAUD_DB!== "undefined") {
     for (const x of ZIM_FRAUD_DB) {
       if (
         x.risk === "CRITICAL" &&
-        x.pattern instanceof RegExp &&
+        x.pattern && typeof x.pattern.test === "function" &&
         x.pattern.test(text)
       ) {
         return [{
-          ...x,
+         ...x,
           analytics: analyticsContext
         }];
       }
@@ -86,11 +85,11 @@ function dzivisaScan(text) {
 
     for (const x of ZIM_FRAUD_DB) {
       if (
-        x.pattern instanceof RegExp &&
+        x.pattern && typeof x.pattern.test === "function" &&
         x.pattern.test(text)
       ) {
         return [{
-          ...x,
+         ...x,
           analytics: analyticsContext
         }];
       }

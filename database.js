@@ -1,4 +1,4 @@
-const ZIM_FRAUD_DB=[
+var ZIM_FRAUD_DB=[
 { pattern: /ecocash.*pin.*send/i, risk: "CRITICAL", title: "ZIM Shield 1", advice: "Dzivisa: Usatumira mari. Fona." }
 ,
 { pattern: /ecocash.*otp.*share/i, risk: "CRITICAL", title: "ZIM Shield 2", advice: "Dzivisa: Usatumira mari. Fona." }
@@ -1197,7 +1197,13 @@ const ZIM_FRAUD_DB=[
 ,
 { pattern: /zipit.*proof.*fake.*mutare.*today/i, risk: "CRITICAL", title: "ZIM Shield 599 mutare today", advice: "Dzivisa mutare: Usatumira." }
 ,
-{ pattern: /zipit.*proof.*fake.*gweru.*now/i, risk: "CRITICAL", title: "ZIM Shield 600 gweru now", advice: "Dzivisa gweru: Usatumira." }
+{ pattern: /zipit.*proof.*fake.*gweru.*now/i, risk: "CRITICAL", title: "ZIM Shield 600 gweru now", advice: "Dzivisa gweru: Usatumira." }    ,
+    { pattern: /love.*(?:send|tumira).*(?:\$|usd|zig|airtime|money).*(?:\d+%|percent)/i,
+      risk: "CRITICAL",
+      title: "Romance Airtime Investment Scam",
+      advice: "Dzivisa: Usatumira mari kana airtime nekuda kwevimbiso yerudo kana purofiti.",
+      analytics: "" }
+
 ];
 // Extra Signature Hook
 

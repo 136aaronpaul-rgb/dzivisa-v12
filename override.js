@@ -57,4 +57,4 @@ async function handleQuickPaste() {
     console.log("Clipboard read blocked, waiting for manual tap.");
   }
 }
-console.log("🔊 Audio shield active console.log("🔊 Audio shield active"); speed optimizations armed");
+console.log("🔊 Audio shield active; speed optimizations armed");

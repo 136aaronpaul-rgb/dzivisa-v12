@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dzivisa-v13.7-gold-1787899950';
+const CACHE_NAME = 'dzivisa-v25-2-aqua-working-1787902833';
 const urlsToCache = [
   './',
   './index.html',

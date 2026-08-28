@@ -1,35 +1,54 @@
-// V13.9 FINAL WORKING - SAFE FIX
-console.log("V13.9 FINAL WORKING");
+// V25.2 AQUA - FULL WORKING ENGINE - FIXED
+console.log("🔒 V25.2 AQUA FULL WORKING");
 
-if(typeof ZIM_FRAUD_DB!=='undefined'){window.ZIM_FRAUD_DB=ZIM_FRAUD_DB; window.vectors=ZIM_FRAUD_DB;}
-const _orig=window.dzivisaScan;
-window.dzivisaScan=function(t){
-  const l=(t||'').toLowerCase();
-  if((l.includes('love you')||(l.includes('love')&&l.includes('you')))&&(l.includes('airtime')||l.includes('$20')||l.includes('$'))&&(l.includes('give you')||l.includes('10%')||l.includes('percent'))){
-    return [{risk:"CRITICAL",title:"Romance Airtime Investment Scam - 100% SCAM",advice:"DO NOT SEND!",analytics:"💰 ROMANCE"}];
-  }
-  if(typeof _orig==='function'){try{const r=_orig(t); if(r&&r[0]&&r[0].risk!=='SAFE')return r; if(r&&r[0].risk==='SAFE'&&typeof ZIM_FRAUD_DB!=='undefined'){for(const x of ZIM_FRAUD_DB){if(x.pattern&&x.pattern.test(t))return [{...x}];}}return r;}catch(e){}}
-  return [{risk:"SAFE",title:"Safe",advice:"Locked",analytics:"⚖️ 611"}];
-};
-window.scanMessage=window.dzivisaScan;
-
-function fixApp(){
-  const bar=document.getElementById('dzivisa-settings-lang');
-  if(bar){
-    bar.style.boxSizing='border-box';
-    bar.style.width='100%';
-    bar.style.maxWidth='100%';
-    bar.style.overflowX='hidden';
-  }
-  document.body.style.overflowX='hidden';
-  const s=(typeof ZIM_FRAUD_DB!=='undefined')?ZIM_FRAUD_DB.length:611;
-  document.querySelectorAll('*').forEach(el=>{
-    const t=(el.textContent||'').trim();
-    if(t.startsWith('VECTOR COUNT:')) el.textContent=`VECTOR COUNT: ${s}/611`;
-    if(t.includes('YEMAHARA 100% SCAM')&&t.includes('Your money is your blood')){
-      el.style.whiteSpace='normal';
-      el.style.fontSize='10px';
-    }
-  });
+if (typeof ZIM_FRAUD_DB!== 'undefined') {
+  window.ZIM_FRAUD_DB = ZIM_FRAUD_DB;
+  window.vectors = ZIM_FRAUD_DB;
+  console.log("✅ Database loaded:", ZIM_FRAUD_DB.length, "patterns");
 }
-setInterval(fixApp,800);
+
+function fixApp() {
+  // Fix scan button
+  const scanBtn = document.querySelector('[onclick*="scan"]') || document.getElementById('scanBtn') || document.querySelector('button');
+  const input = document.querySelector('textarea') || document.querySelector('input[type="text"]') || document.getElementById('msgInput');
+  const result = document.getElementById('result') || document.querySelector('.result') || document.getElementById('output');
+
+  if (scanBtn && input) {
+    scanBtn.onclick = function() {
+      const text = input.value;
+      console.log("Scanning:", text);
+      const res = window.dzivisaScan(text);
+      if (result) {
+        result.innerHTML = `<div style="padding:12px;border:2px solid ${res[0].risk==='CRITICAL'?'red':'#4DD0E1'};border-radius:10px;margin:10px 0">
+          <b style="color:${res[0].risk==='CRITICAL'?'red':'#4DD0E1'}">${res[0].risk}: ${res[0].title}</b><br>
+          <div style="margin:8px 0">${res[0].advice}</div>
+          <small>${res[0].analytics}</small>
+        </div>`;
+        result.style.display = 'block';
+      } else {
+        alert(res[0].risk + ": " + res[0].title + "\n" + res[0].advice);
+      }
+    };
+    console.log("✅ Scan button FIXED");
+  }
+
+  // Fix moving bar
+  const ticker = document.getElementById('tickerText');
+  if (ticker) {
+    ticker.style.whiteSpace = 'nowrap';
+    ticker.style.animation = 'scroll-left 25s linear infinite';
+  }
+}
+
+setInterval(fixApp, 800);
+setTimeout(fixApp, 1000);
+
+window.dzivisaScan = window.dzivisaScan || function(t) {
+  if(typeof ZIM_FRAUD_DB!== 'undefined') {
+    for(const x of ZIM_FRAUD_DB) {
+      if(x.pattern && x.pattern.test(t)) return [x];
+    }
+  }
+  return [{risk:"SAFE", title:"Safe", advice:"No scam", analytics:"✅"}];
+};
+window.scanMessage = window.dzivisaScan;

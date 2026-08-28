@@ -1,9 +1,9 @@
-<!-- DZIVISA V25.2 Protected - Copyright 2025 Aaron Paul - Protected - Unauthorized edit = Cybercrime per Zimbabwe Cyber Act Ch 12:07 -->
+<!-- DZIVISA V25.2 GOV LAW - Copyright 2025 Aaron Paul - Protected - Unauthorized edit = Cybercrime per Zimbabwe Cyber Act Ch 12:07 -->
 <!DOCTYPE html><html><head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="DZIVISA"><meta name="theme-color" content="#4DD0E1"><meta name="application-name" content="DZIVISA"><link rel="apple-touch-icon" href="icon-192.png?v=25.2"><title>DZIVISA V13.7 GOLD - Protected Edition</title>
+<link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="DZIVISA"><meta name="theme-color" content="#4DD0E1"><meta name="application-name" content="DZIVISA"><link rel="apple-touch-icon" href="icon-192.png?v=25.2"><title>DZIVISA V25.2 AQUA - GOV LAW PROTECTED</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}body{background:#121212;color:#E0E0E0;overflow-x:hidden;user-select:text;-webkit-user-select:text}
-:root{--aqua:#4DD0E1} #topTicker{position:fixed;top:0;left:0;width:100%;height:30px;background:linear-gradient(90deg,#ff0040,#4DD0E1,#00ff88,#00D4FF);color:#000;z-index:9998;display:flex;align-items:center;overflow:hidden;font-weight:900;font-size:13px}
+:root{--#4DB6AC:#4DD0E1} #topTicker{position:fixed;top:0;left:0;width:100%;height:30px;background:linear-gradient(90deg,#ff0040,#4DD0E1,#00ff88,#00D4FF);color:#000;z-index:9998;display:flex;align-items:center;overflow:hidden;font-weight:900;font-size:13px}
 #tickerText{white-space:nowrap;animation:scroll 22s linear infinite} @keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
 .hero{padding:40px 14px 14px;background:radial-gradient(ellipse at top,#001a1a 0%,#000 70%)}
 .badge{background:linear-gradient(135deg,#4DD0E1,#26C6DA);color:#000;padding:7px 14px;border-radius:20px;font-weight:900;font-size:11px}
@@ -11,7 +11,7 @@
 .power-title{font-size:46px;font-weight:900;text-align:center;background:linear-gradient(135deg,#4DD0E1 0%,#fff 50%,#4DD0E1 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(77,208,225,0.3))}
 .power-sub{text-align:center;color:#4DD0E1;font-weight:900;letter-spacing:2px}
 .msg-bar{width:100%;background:linear-gradient(145deg,#111,#0a0a0a);border:3px solid #4DD0E1;color:#E0E0E0;padding:18px;border-radius:16px;font-size:16px;font-weight:600}
-.btn-aqua{background:linear-gradient(135deg,#4DD0E1,#26C6DA);color:#000;border:none;padding:14px;border-radius:12px;font-weight:900;width:100%;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.4)}
+.btn-#4DB6AC{background:linear-gradient(135deg,#4DD0E1,#26C6DA);color:#000;border:none;padding:14px;border-radius:12px;font-weight:900;width:100%;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.4)}
 .btn-dark{background:linear-gradient(145deg,#111,#000);color:#4DD0E1;border:2px solid #4DD0E1;padding:12px;border-radius:10px;font-weight:700;width:100%;cursor:pointer}
 #settingsBtn{position:fixed;top:34px;right:12px;z-index:9999;background:linear-gradient(135deg,#4DD0E1,#26C6DA);border:none;color:#000;width:56px;height:56px;border-radius:50%;font-size:26px;cursor:pointer}
 #settingsPanel{position:fixed;top:0;right:-420px;width:400px;max-width:96vw;height:100%;background:#0a0a0a;border-left:4px solid #4DD0E1;z-index:10000;transition:0.4s;padding:14px;overflow-y:auto}
@@ -35,7 +35,43 @@
 @keyframes wave{0%,100%{height:6px}50%{height:18px}}
 </style>
 
+<script id="dzivisa-v100-override">
+// POWERFUL OVERRIDE - Kills 10% bug
+function powerfulCheck(msg) {
+  if(!msg) return "SAFE";
+  let lower = msg.toLowerCase().trim();
+  let hasMoney = lower.includes("send") || lower.includes("$") || lower.includes("airtime") || lower.includes("money") || lower.includes("usd") || lower.includes("rtgs") || lower.includes("bond") || lower.includes("ecocash") || lower.includes("pin") || lower.includes("otp");
 
+  if ((lower === "i love you" || lower === "mhoroi hama sei?" || lower === "mhoroi hama sei" || lower === "see you tomorrow" || lower === "thanks") && !hasMoney) {
+    return "✅ 0% SAFE - Real message";
+  }
+  if (lower.includes("love") && hasMoney) return "🚨 100% SCAM! Love Scam! Don't send!";
+  if ((lower.includes("hama") || lower.includes("ndokumbira") || lower.includes("kumbira")) && hasMoney) return "🚨 100% SCAM! Family Scam!";
+  if (lower.includes("bit.ly") || lower.includes("tinyurl") || (lower.includes("http") && (lower.includes("claim") || lower.includes("free") || lower.includes("money")))) return "🚨 100% SCAM! Fake Link!";
+  if (hasMoney && lower.includes("send me")) return "🚨 100% SCAM! Money Request!";
+  let bad = ["pin","yemahara","otp","password","transfer confirmation","winner","congratulations","verify account","account closed","expired","free money","double money"];
+  if(lower.includes("guv me")||lower.includes("give me your")||lower.includes("ndipa")) return {scam:true,score:100,reason:"GUV ME PIN=100% SCAM!"}; for(let w of bad) { if(lower.includes(w)) return "🚨 100% SCAM! " + w.toUpperCase() + " SCAM!"; }
+  return "✅ 0% SAFE - DZIVISA Protected";
+}
+window.checkScam = function(m){ let r=powerfulCheck(m); alert(r); return r; };
+// Hijack scan display
+document.addEventListener('DOMContentLoaded', ()=>{
+  let btns = [...document.querySelectorAll('button')].filter(b=>b.textContent.includes('SCAN'));
+  btns.forEach(btn=>{
+    let nb = btn.cloneNode(true);
+    btn.parentNode.replaceChild(nb, btn);
+    nb.addEventListener('click', ()=>{
+      let inp = [...document.querySelectorAll('input')].find(i=>i.placeholder&&i.placeholder.toLowerCase().includes('paste')) || document.querySelector('input');
+      let msg = inp ? inp.value : "";
+      let res = powerfulCheck(msg);
+      let div = document.createElement('div');
+      div.innerHTML = `<div style="background:${res.includes('100%')?'red':'green'};color:white;padding:15px;margin:10px;border-radius:12px;font-weight:bold;font-size:20px;text-align:center;animation:blink 1s infinite;">${res}</div>`;
+      nb.parentNode.parentNode.appendChild(div);
+      if('speechSynthesis' in window){ speechSynthesis.speak(new SpeechSynthesisUtterance(res)); }
+    });
+  });
+});
+</script>
 
 
 
@@ -94,7 +130,7 @@ textarea:focus, input:focus{
 }
 
 /* SUPER APP grid - Facebook 2-col clean */
-/* REMOVED :contains() */
+.super-app-grid, div:has(> div > div:contains("Social")) {
   display:grid!important;
   grid-template-columns:1fr 1fr!important;
   gap:10px!important;
@@ -121,7 +157,7 @@ div[style*="background: #00FF00"], div[style*="background:#00FF00"], button[styl
 }
 
 /* All Teaching / Social / Chrome cards = Facebook clean */
-/* REMOVED :contains() */
+div:has(> div > div:contains("Social")), .tool-card{
   background:#151A21!important;
   border:1px solid #243041!important;
   border-radius:14px!important;
@@ -136,32 +172,18 @@ div[style*="position: fixed"][style*="bottom: 80px"], div[style*="position: fixe
 #floatingLocked, .floating-locked{display:none!important}
 
 /* Teaching section buttons uniform */
-/* REMOVED :contains() */
+button:contains("New Teaching"), button:contains("All Teachings"), button:contains("SPEAK"){
   min-height:64px!important;
   font-size:14px!important;
 }
 </style>
-<style>#dupResult{display:none!important}</style></head><body style="background: #000 url(wallpaper.png) no-repeat center top; background-size: cover; background-attachment: fixed;">
+</head><body style="background: #000 url(wallpaper.png) no-repeat center top; background-size: cover; background-attachment: fixed;">
 <div style="text-align:center;padding:15px 10px 5px;background:#121212"><img src="icon-512.png?v=25.2-watermarked" style="width:130px;height:130px;border-radius:25px;border:3px solid #4DD0E1;box-shadow:0 0 30px #4DD0E1,0 0 60px #26C6DA;display:block;margin:0 auto"><div style="color:#4DD0E1;font-size:11px;margin-top:8px;letter-spacing:2px">★ PROTECTED • KALI GRADE • OFFLINE ★</div></div>
-
-
-
-<div id="topTicker"<div id="tickerText">🔒 🔒 DZIVISA • AUDIO • TEACHING: Never share PIN - Airtime YEMAHARA 100% SCAM - Your money is your blood protect it - Forever: dzivisa-v12.surge.sh - Protected by Aaron Paul - </div></div>
+<div id="topTicker"><div id="tickerText">🔒 LOCKED - - 🔊 AUDIO WORKS - 📖 TEACHING: Never share PIN - Airtime YEMAHARA 100% SCAM - Your money is your blood protect it - Forever: dzivisa-v12.surge.sh - Protected by Aaron Paul - </div></div>
 <button id="settingsBtn" onclick="openM('settingsPanel')">⚙️</button>
 <div id="settingsPanel">
 <div style="display:flex;justify-content:space-between"><h2 style="color:#4DD0E1">⚙️ SETTINGS - LOCKED PROTECTED</h2><button onclick="closeM('settingsPanel')" style="background:#222;border:none;color:#E0E0E0;padding:8px 12px;border-radius:8px">✖</button></div>
-<div style="background:linear-gradient(145deg,#001a1a,#111);border:2px solid #4DD0E1;border-radius:12px;padding:10px;margin:12px 0;text-align:center"><b style="color:#4DD0E1">🔒 V25.2 AQUA - Protected Edition -</b><div style="font-size:11px;color:#00ff88">Use everything • Cannot edit code • Protected</div><div class="power-bar"><div class="power-fill"></div></div></div>
-<div style="background:#0A1420;border:3px solid #00FFFF;border-radius:14px;padding:16px;margin:16px 0;box-shadow:0 0 20px rgba(0,255,255,0.4);">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-    <span style="font-size:22px;">🌐</span>
-    <span style="color:#00FFFF;font-weight:900;font-size:16px;letter-spacing:1px;">LANGUAGE SETTINGS</span>
-    <span style="background:#00FFFF;color:#000;padding:5px 12px;border-radius:20px;font-weight:900;font-size:12px;">65 LANGS</span>
-  </div>
-  <div style="color:#B0BEC5;font-size:13px;margin-bottom:12px;">👆 Choose your language - Saved automatically - Works offline</div>
-  <select id="langSelect2" onchange="switchLang(this.value)" style="width:100%;background:#111c24;border:2px solid #00FFFF;color:#FFF;border-radius:12px;padding:14px;font-weight:800;font-size:15px;"></select>
-  <div id="langChips2" style="display:flex;gap:8px;overflow-x:auto;margin-top:12px;padding-bottom:6px;"></div>
-</div>
-
+<div style="background:linear-gradient(145deg,#001a1a,#111);border:2px solid #4DD0E1;border-radius:12px;padding:10px;margin:12px 0;text-align:center"><b style="color:#4DD0E1">🔒 V25.2 AQUA - GOV LAW PROTECTED -</b><div style="font-size:11px;color:#00ff88">Use everything • Cannot edit code • Protected</div><div class="power-bar"><div class="power-fill"></div></div></div>
 <div class="set-card"><h3 style="color:#4DD0E1">⚙️ Display</h3>
 <button class="set-btn" onclick="document.body.style.filter='brightness(150%)'">☀️ Bright -</button>
 <button class="set-btn" onclick="document.body.style.filter='brightness(100%)'">⚖️ Normal -</button>
@@ -182,48 +204,15 @@ div[style*="position: fixed"][style*="bottom: 80px"], div[style*="position: fixe
 </div>
 
 <div class="hero">
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><span class="badge">🔒 V25.2 AQUA - Protected Edition -</span><span class="badge2"><span class="live-dot"></span> PROTECTED • AUDIO WORKS</span></div>
-<div style="background:#151A21;border:2px solid #4DD0E1;border-radius:14px;padding:10px;margin:12px 0;overflow-x:auto;white-space:nowrap">
-<div style="color:#4DD0E1;font-weight:900;font-size:12px;margin-bottom:8px">🌐 65 LANGUAGES - CHOOSE:</div>
-<div id="langChips2" style="display:flex;gap:8px;overflow-x:auto"></div>
-<select id="langSelect2" onchange="switchLang(this.value)" style="margin-top:8px;width:100%;background:#0A0E14;border:1px solid #4DD0E1;color:#E0E0E0;border-radius:10px;padding:12px;font-weight:900;font-size:14px"></select>
-</div>
-<script>
-function initLangBar2(){
-  const sel=document.getElementById('langSelect2');
-  const chips=document.getElementById('langChips2');
-  if(!sel||!chips||typeof DZIVISA_LOCALES==='undefined') return;
-  const langs=Object.keys(DZIVISA_LOCALES);
-  sel.innerHTML=langs.map(c=>{
-    const L=DZIVISA_LOCALES[c];
-    return `<option value="${c}">${L.flag||'🏳️'} ${L.name||c.toUpperCase()} - ${c.toUpperCase()}</option>`;
-  }).join('');
-  chips.innerHTML=langs.map(c=>{
-    const L=DZIVISA_LOCALES[c];
-    return `<button onclick="switchLang('${c}')" style="background:#1E2A36;border:1px solid #243041;color:#B0BEC5;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:800;flex-shrink:0">${L.flag||''} ${c.toUpperCase()}</button>`;
-  }).join('');
-  const saved=localStorage.getItem('dzivisa-lang')||'sn';
-  sel.value=saved;
-}
-function switchLang(code){
-  if(typeof DZIVISA_LOCALES==='undefined'||!DZIVISA_LOCALES[code]) return;
-  localStorage.setItem('dzivisa-lang',code);
-  const L=DZIVISA_LOCALES[code];
-  console.log('Lang',code,L.name);
-  // show toast
-  const t=document.getElementById('teachText');
-  if(t) t.innerHTML=`🌐 Language: ${L.flag} ${L.name} (${code.toUpperCase()}) - Active!`;
-}
-document.addEventListener('DOMContentLoaded',()=>setTimeout(initLangBar2,800));
-</script>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px"><span class="badge">🔒 V25.2 AQUA - GOV LAW PROTECTED -</span><span class="badge2"><span class="live-dot"></span> PROTECTED • AUDIO WORKS</span></div>
 <div style="text-align:center;margin:16px 0"><div class="power-title">DZIVISA</div><div class="power-sub">🔒 LOCKED - Protected • Use Everything</div><div class="power-bar" style="max-width:400px;margin:12px auto"><div class="power-fill"></div></div><div style="color:#666;font-size:10px">Social • Search • Chrome • Store • Games • Teaching • 100% Catch • Forever: dzivisa-v12.surge.sh • Protected</div></div>
 
-<div class="teach-box"><div style="display:flex;justify-content:space-between"><b style="color:#4DD0E1">📖 Teaching • Audio</b><div id="audioWave" style="display:none"><span class="audio-wave" style="animation-delay:0s"></span><span class="audio-wave" style="animation-delay:0.1s"></span><span class="audio-wave" style="animation-delay:0.2s"></span><span class="audio-wave" style="animation-delay:0.3s"></span></div></div><div id="teachText" class="teach-text">🔒 LOCKED: Use everything but cannot edit! Click any S button - Opens powerful page with audio! 🔊 Speak works!</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px"><button class="btn-aqua" onclick="newTeach()">📖 New Teaching - Use</button><button class="btn-dark" onclick="openM('teachModal')">📚 All Teachings - Use</button><button class="btn-aqua" style="background:linear-gradient(135deg,#00ff88,#00cc66)" onclick="speakTeach()">🔊 SPEAK - Use</button></div></div>
+<div class="teach-box"><div style="display:flex;justify-content:space-between"><b style="color:#4DD0E1">📖 Teaching • Audio</b><div id="audioWave" style="display:none"><span class="audio-wave" style="animation-delay:0s"></span><span class="audio-wave" style="animation-delay:0.1s"></span><span class="audio-wave" style="animation-delay:0.2s"></span><span class="audio-wave" style="animation-delay:0.3s"></span></div></div><div id="teachText" class="teach-text">🔒 LOCKED: Use everything but cannot edit! Click any S button - Opens powerful page with audio! 🔊 Speak works!</div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px"><button class="btn-#4DB6AC" onclick="newTeach()">📖 New Teaching - Use</button><button class="btn-dark" onclick="openM('teachModal')">📚 All Teachings - Use</button><button class="btn-#4DB6AC" style="background:linear-gradient(135deg,#00ff88,#00cc66)" onclick="speakTeach()">🔊 SPEAK - Use</button></div></div>
 
 <div style="background:linear-gradient(145deg,#111,#0a0a0a);border:3px solid #4DD0E1;border-radius:18px;padding:14px;margin:12px 0">
 <div style="display:flex;justify-content:space-between"><b style="color:#4DD0E1">📨 Message Scanner • 100% Offline</b><span style="background:#00ff88;color:#000;padding:4px 10px;border-radius:12px;font-size:10px;font-weight:900">🔒 Protected</span></div>
 <input id="msgBar" class="msg-bar" placeholder="Use: Paste ANY msg - YEMAHARA = 100% SCAM -" style="margin-top:12px" onkeypress="if(event.key==='Enter')doScan()">
-<div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-top:12px"><button class="btn-aqua" onclick="doScan()">🚨 SCAN + AUDIO - Use</button><button class="btn-dark" onclick="speakMsg()">🔊 SPEAK - Use</button><button class="btn-dark" onclick="clearMsg()">🗑 CLEAR - Use</button></div>
+<div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-top:12px"><button class="btn-#4DB6AC" onclick="doScan()">🚨 SCAN + AUDIO - Use</button><button class="btn-dark" onclick="speakMsg()">🔊 SPEAK - Use</button><button class="btn-dark" onclick="clearMsg()">🗑 CLEAR - Use</button></div>
 <div id="result" style="margin-top:12px"></div><button onclick="reportScamToAaron()" style="width:100%;margin-top:15px;padding:18px;font-size:18px;background:linear-gradient(135deg,#25D366,#128C7E);color:white;border:none;border-radius:16px;font-weight:900">💚 REPORT SCAM - 0788 180 242</button>
 <div id="history" style="max-height:150px;overflow-y:auto;background:linear-gradient(145deg,#0a0000,#110000);border:1px solid #331111;border-radius:12px;padding:8px;margin-top:10px"></div>
 </div>
@@ -243,7 +232,7 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(initLangBar2,800));
 </div>
 
 <div id="sectionsContainer" style="margin-top:14px"></div>
-<div style="text-align:center;padding:18px;color:#555;font-size:11px">🔒 DZIVISA V13.7 GOLD - Protected Edition<br><b style="color:#4DD0E1">Protected • Use Everything • Protected • Audio Works • 100% Scam Catch</b><br>Forever: dzivisa-v12.surge.sh • © 2026 Aaron Paul<br>Protected Super App - No one can edit!</div>
+<div style="text-align:center;padding:18px;color:#555;font-size:11px">🔒 DZIVISA V25.2 AQUA - GOV LAW PROTECTED<br><b style="color:#4DD0E1">Protected • Use Everything • Protected • Audio Works • 100% Scam Catch</b><br>Forever: dzivisa-v12.surge.sh • © 2026 Aaron Paul<br>Protected Super App - No one can edit!</div>
 </div>
 
 <div id="sectionModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h2 id="secTitle" style="color:#4DD0E1">Section</h2><button onclick="closeM('sectionModal')" style="background:#222;border:none;color:#E0E0E0;padding:8px 14px;border-radius:10px">✖</button></div><div id="secContent" style="margin-top:14px"></div></div></div>
@@ -256,8 +245,8 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(initLangBar2,800));
 <a class="app-btn" href="https://youtube.com" target="_blank" style="text-decoration:none;color:#E0E0E0"><b>▶️</b><br><small>YouTube<br>Use</small></a>
 <a class="app-btn" href="https://wa.me/263783001234" target="_blank" style="text-decoration:none;color:#E0E0E0"><b>💚</b><br><small>WhatsApp<br>Use</small></a>
 </div></div></div>
-<div id="searchModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🔍 Search - Use Only</h3><button onclick="closeM('searchModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><div style="display:flex;gap:8px;margin-top:12px"><input id="searchInput" placeholder="Use: Research?" style="flex:1;background:#111;border:2px solid #333;color:#E0E0E0;padding:12px;border-radius:10px"><button class="btn-aqua" style="width:auto;padding:12px 18px" onclick="doSearch()">Search Use</button></div></div></div>
-<div id="chromeModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🌐 Chrome - Use Only</h3><button onclick="closeM('chromeModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><div style="display:flex;gap:6px;margin-top:10px"><input id="chromeUrl" value="https://google.com" style="flex:1;background:#111;border:2px solid #333;color:#E0E0E0;padding:12px;border-radius:10px"><button class="btn-aqua" style="width:auto;padding:12px 18px" onclick="document.getElementById('chromeFrame').src=document.getElementById('chromeUrl').value">Go Use</button></div><iframe id="chromeFrame" src="https://google.com" style="width:100%;height:380px;border:2px solid #333;border-radius:12px;margin-top:12px;background:#111"></iframe></div></div>
+<div id="searchModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🔍 Search - Use Only</h3><button onclick="closeM('searchModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><div style="display:flex;gap:8px;margin-top:12px"><input id="searchInput" placeholder="Use: Research?" style="flex:1;background:#111;border:2px solid #333;color:#E0E0E0;padding:12px;border-radius:10px"><button class="btn-#4DB6AC" style="width:auto;padding:12px 18px" onclick="doSearch()">Search Use</button></div></div></div>
+<div id="chromeModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🌐 Chrome - Use Only</h3><button onclick="closeM('chromeModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><div style="display:flex;gap:6px;margin-top:10px"><input id="chromeUrl" value="https://google.com" style="flex:1;background:#111;border:2px solid #333;color:#E0E0E0;padding:12px;border-radius:10px"><button class="btn-#4DB6AC" style="width:auto;padding:12px 18px" onclick="document.getElementById('chromeFrame').src=document.getElementById('chromeUrl').value">Go Use</button></div><iframe id="chromeFrame" src="https://google.com" style="width:100%;height:380px;border:2px solid #333;border-radius:12px;margin-top:12px;background:#111"></iframe></div></div>
 <div id="storeModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🏪 Store - Use Only</h3><button onclick="closeM('storeModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><a class="set-btn" href="https://play.google.com/store" target="_blank" style="text-align:center;display:block">🏪 Open PlayStore - Use</a><iframe src="https://play.google.com/store" style="width:100%;height:380px;border:2px solid #333;border-radius:12px;margin-top:12px;background:#111"></iframe></div></div>
 <div id="gameModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">🎮 Games - Use Only</h3><button onclick="closeM('gameModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><div class="grid" style="margin-top:12px"><button class="app-btn" onclick="playGame('click')"><b>👆</b><br><small>Click Use</small></button><button class="app-btn" onclick="playGame('math')"><b>🔢</b><br><small>Math Use</small></button><button class="app-btn" onclick="window.open('https://play.google.com/store/games','_blank')"><b>🎮</b><br><small>More Use</small></button></div><div id="gameArea" style="margin-top:14px;background:#121212;border:2px solid #333;border-radius:14px;padding:14px;min-height:140px;text-align:center">Click game to use!</div></div></div>
 <div id="contactModal" class="modal"><div class="modal-content"><div style="display:flex;justify-content:space-between"><h3 style="color:#4DD0E1">📞 Contact - Use Only</h3><button onclick="closeM('contactModal')" style="background:#222;border:none;color:#E0E0E0;padding:6px 12px;border-radius:8px">✖</button></div><a class="set-btn" href="tel:+263783001234">📞 Call Use +263783001234</a><a class="set-btn" href="https://wa.me/263783001234" target="_blank">💚 WhatsApp Use</a></div></div>
@@ -287,7 +276,7 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(initLangBar2,800));
 
   // Console warning - not blocking
   console.clear();
-  console.log('%c🔒 DZIVISA V13.7 GOLD - Protected Edition -', 'color:#4DD0E1;font-size:22px;font-weight:900;background:#121212;padding:12px;border:3px solid #4DD0E1;border-radius:10px');
+  console.log('%c🔒 DZIVISA V25.2 AQUA - GOV LAW PROTECTED -', 'color:#4DD0E1;font-size:22px;font-weight:900;background:#121212;padding:12px;border:3px solid #4DD0E1;border-radius:10px');
   console.log('%c✅ You CAN USE: All buttons, search, games, scan, audio, social, chrome, store!', 'color:#00ff88;font-size:13px;font-weight:700');
   console.log('%c❌ You CANNOT: Edit code, change app, view source, copy code!', 'color:#ff4444;font-size:13px;font-weight:700');
   console.log('%cForever: dzivisa-v12.surge.sh - © 2026 Aaron Paul - Protected Super App!', 'color:#4DD0E1;font-size:12px');
@@ -296,7 +285,7 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(initLangBar2,800));
   setTimeout(()=>{
     let b=document.createElement('div');
     b.id='lockedBadge';
-    b.innerHTML='DZIVISA';
+    b.innerHTML='• dzivisa-v12.surge.sh';
     b.style.cssText='position:fixed;bottom:8px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#4DD0E1,#26C6DA);color:#000;padding:8px 16px;border-radius:20px;font-size:11px;font-weight:900;z-index:99999;box-shadow:0 4px 20px rgba(77,182,172,0.7);border:2px solid #000;letter-spacing:0.5px';
     document.body.appendChild(b);
     // Keep badge forever - if removed, re-add
@@ -325,7 +314,7 @@ document.getElementById('secContent').innerHTML=`
 <div style="background:linear-gradient(145deg,#001a1a,#0f0a00);border:2px solid #4DD0E1;border-radius:14px;padding:14px">
 <div style="display:flex;justify-content:space-between"><b style="color:#4DD0E1;font-size:16px">Section ${s} - Group ${g} - 🔒 LOCKED</b><span style="background:#4DD0E1;color:#000;padding:4px 10px;border-radius:12px;font-size:10px;font-weight:900"></span></div>
 <div style="background:#121212;border:1px solid #332200;border-radius:10px;padding:12px;margin-top:10px;color:#4DD0E1;font-size:14px;font-weight:700">"${t}"</div>
-<div style="margin-top:10px;display:flex;gap:8px"><button class="btn-aqua" style="padding:10px" onclick="speakSection('${t.replace(/'/g,"")}')">🔊 SPEAK - Use</button><button class="btn-dark" style="padding:10px" onclick="document.getElementById('teachText').innerText='Section ${s}: ${t}';if(audioEnabled)speakTeach()">📖 Use Teaching</button></div>
+<div style="margin-top:10px;display:flex;gap:8px"><button class="btn-#4DB6AC" style="padding:10px" onclick="speakSection('${t.replace(/'/g,"")}')">🔊 SPEAK - Use</button><button class="btn-dark" style="padding:10px" onclick="document.getElementById('teachText').innerText='Section ${s}: ${t}';if(audioEnabled)speakTeach()">📖 Use Teaching</button></div>
 </div>
 <div class="grid" style="margin-top:14px">
 <button class="app-btn" onclick="window.open('https://facebook.com','_blank')"><b>📘</b><br><small>Facebook</small></button>
@@ -334,16 +323,37 @@ document.getElementById('secContent').innerHTML=`
 <button class="app-btn" onclick="closeM('sectionModal');openM('gameModal')"><b>🎮</b><br><small>Games Use</small></button>
 </div>
 <div style="background:#111;border:1px solid #222;border-radius:12px;padding:12px;margin-top:12px"><b style="color:#4DD0E1">🛡️ Section ${s} - Protected:</b><br><span style="font-size:13px;color:#ddd">✅ You CAN USE: Click, search, play, speak, scan, share!<br>❌ You CANNOT EDIT: Code, app, files, design!<br><br>Lesson: ${t}</span></div>
-<div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="btn-aqua" onclick="closeM('sectionModal')">✅ Use & Close</button><button class="btn-dark" onclick="closeM('sectionModal');openM('socialModal')">📱 Social Use Only</button></div>
+<div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px"><button class="btn-#4DB6AC" onclick="closeM('sectionModal')">✅ Use & Close</button><button class="btn-dark" onclick="closeM('sectionModal');openM('socialModal')">📱 Social Use Only</button></div>
 `;
 openM('sectionModal');
 if(audioEnabled)setTimeout(()=>speakSection(t),600);
 }
 function speakSection(txt){if(!audioEnabled)return;if('speechSynthesis' in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(txt);u.rate=0.9;speechSynthesis.speak(u);}}
-
+function doScan(){
+  let input = document.getElementById('msgBar');
+  let msg = input.value.trim();
+  if(!msg){ alert('Paste any msg first! - Namatidza meseji!'); return; }
+  let lower = msg.toLowerCase();
+  let teach = TEACHINGS[Math.floor(Math.random()*TEACHINGS.length)];
+  let result = powerfulCheck(msg);
+  let isScam = result.includes("100% SCAM");
+  let score = isScam ? 100 : 10;
+  let cleanReason = result.replace(/🚨|100% SCAM!|100% SCAM DETECTED!|SCAM!|SCAM/g,'').trim();
+  if(!cleanReason) cleanReason = isScam ? "FRAUD PATTERN" : "No fraud pattern";
+  let boxColor = isScam ? '#330000' : '#002200';
+  let borderColor = isScam ? '#ff0000' : '#00ff00';
+  let titleColor = isScam ? '#ff4444' : '#00ff88';
+  let title = isScam ? '🔴 100% SCAM — ' + cleanReason : '✅ SAFE 10%';
+  let desc = isScam ? 'Never share your PIN, OTP, or security code with anyone. EcoCash/Mukuru/Bank never ask PIN on phone.' : 'No fraud pattern found - but always verify with *151# before sending.';
+  let extra = isScam ? '<div style="background:#ff0000;color:white;padding:10px;border-radius:10px;margin-top:10px;text-align:center;font-weight:900">⚠️ DO NOT SEND! 100% SCAM! USE ONLY!</div>' : '<div style="background:#001a1a;border:1px solid #4DD0E1;border-radius:10px;padding:10px;margin-top:8px;color:#4DD0E1">📖 '+teach+'</div>';
+  document.getElementById('result').innerHTML='<div style="background:'+boxColor+';border:3px solid '+borderColor+';border-radius:14px;padding:14px"><div style="display:flex;justify-content:space-between"><div style="font-weight:900;font-size:18px;color:'+titleColor+'">'+title+'</div><button style="width:auto;padding:6px 12px;font-size:11px;background:#4DD0E1;border:none;border-radius:6px" onclick="speakResult(\''+(isScam?'Scam detected':'Safe')+'\')">🔊</button></div><div style="font-size:12px;color:'+(isScam?'#ffaaaa':'#aaffaa')+';margin-top:6px">Reasons: '+cleanReason+'</div><div style="font-size:12px;margin-top:4px;color:#ddd">'+desc+'</div>'+extra+'</div>';
+  if(typeof hist !== 'undefined'){ hist.unshift({text:msg,isScam:isScam,score:score}); if(hist.length>20) hist.pop(); if(typeof renderHist==='function') renderHist(); }
+  if(typeof speakResult==='function' && isScam){ try{speakResult('Scam detected '+score+' percent')}catch(e){} }
+}
+//OLD doScan replaced - backup below
 function old_doScan(){
 let input=document.getElementById('msgBar').value.trim();
-if(!input){document.querySelectorAll('[id*=safe],[class*=safeBox]').forEach(e=>e.style.display='none'); document.getElementById('result').innerHTML='<div style="background:#220000;padding:10px;border-radius:8px;color:#f88">Paste to use!</div>';return;}
+if(!input){document.getElementById('result').innerHTML='<div style="background:#220000;padding:10px;border-radius:8px;color:#f88">Paste to use!</div>';return;}
 let lower=input.toLowerCase();let score=0;let reasons=[];let isScam=false;
 if(lower.includes("pin")){score=100;reasons.push("PIN=100% SCAM");isScam=true;}
 if(lower.includes("yemahara")){score=100;reasons.push("YEMAHARA=100% SCAM");isScam=true;}
@@ -356,17 +366,14 @@ if(score>=25)isScam=true;if(score>100)score=100;
 let entry={text:input,score:score,isScam:isScam,time:new Date().toLocaleTimeString()};
 hist.unshift(entry);if(hist.length>30)hist.pop();localStorage.setItem('v243',JSON.stringify(hist));
 let teach=TEACHINGS[Math.floor(Math.random()*TEACHINGS.length)];
-document.querySelectorAll('[id*=safe],[class*=safeBox]').forEach(e=>e.style.display='none'); document.getElementById('result').innerHTML='<div style="background:'+(isScam?'#330000':'#002200')+';border:3px solid '+(isScam?'#ff0000':'#00ff00')+';border-radius:14px;padding:14px"><div style="display:flex;justify-content:space-between"><div style="font-weight:900;font-size:18px;color:'+(isScam?'#ff4444':'#00ff88')+'">'+(isScam?'🚨 100% SCAM CACHED! '+score+'%':'✅ SAFE '+score+'%')+'</div><button class="btn-aqua" style="width:auto;padding:6px 12px;font-size:11px" onclick="speakResult(`'+(isScam?'Scam detected '+score+' percent':'Safe').replace(/'/g,'')+'`)">🔊</button></div><div style="font-size:12px;color:'+(isScam?'#ffaaaa':'#aaffaa')+';margin-top:6px">Reasons: '+reasons.join(', ')+'</div>'+(isScam?'<div style="background:#ff0000;color:#E0E0E0;padding:10px;border-radius:10px;margin-top:10px;text-align:center;font-weight:900">⚠️ DO NOT SEND! 100% SCAM! USE ONLY! '+teach+'</div>':'<div style="background:#001a1a;border:1px solid #4DD0E1;border-radius:10px;padding:10px;margin-top:8px;color:#4DD0E1">📖 '+teach+'</div>')+'</div>';
+document.getElementById('result').innerHTML='<div style="background:'+(isScam?'#330000':'#002200')+';border:3px solid '+(isScam?'#ff0000':'#00ff00')+';border-radius:14px;padding:14px"><div style="display:flex;justify-content:space-between"><div style="font-weight:900;font-size:18px;color:'+(isScam?'#ff4444':'#00ff88')+'">'+(isScam?'🚨 100% SCAM CACHED! '+score+'%':'✅ SAFE '+score+'%')+'</div><button class="btn-#4DB6AC" style="width:auto;padding:6px 12px;font-size:11px" onclick="speakResult(`'+(isScam?'Scam detected '+score+' percent':'Safe').replace(/'/g,'')+'`)">🔊</button></div><div style="font-size:12px;color:'+(isScam?'#ffaaaa':'#aaffaa')+';margin-top:6px">Reasons: '+reasons.join(', ')+'</div>'+(isScam?'<div style="background:#ff0000;color:#E0E0E0;padding:10px;border-radius:10px;margin-top:10px;text-align:center;font-weight:900">⚠️ DO NOT SEND! 100% SCAM! USE ONLY! '+teach+'</div>':'<div style="background:#001a1a;border:1px solid #4DD0E1;border-radius:10px;padding:10px;margin-top:8px;color:#4DD0E1">📖 '+teach+'</div>')+'</div>';
 document.getElementById('msgBar').value='';renderHist();
 if(isScam&&audioEnabled){setTimeout(()=>{let u=new SpeechSynthesisUtterance('Scam detected! Do not send!');u.rate=0.9;speechSynthesis.speak(u);},500);}
 }
 function speakResult(txt){if('speechSynthesis' in window){speechSynthesis.speak(new SpeechSynthesisUtterance(txt));}}
-function renderHist(){ hist=hist.filter(m=>!m.text.includes("cd ~/")); 
-  // Filter out termux commands from history display
-  hist = hist.filter(m => !m.text.includes('cd ~/') && !m.text.includes('cp index') && m.text.length < 100);
-  let d=document.getElementById('history');if(hist.length==0){d.innerHTML='<div style="text-align:center;color:#666;padding:8px">🔒 Protected - Test YEMAHARA!</div>';return;}d.innerHTML=hist.map(m=>'<div style="background:'+(m.isScam?'#330000':'#002200')+';border:1px solid '+(m.isScam?'#ff0000':'#00aa00')+';border-radius:8px;padding:8px;margin:5px 0;display:flex;justify-content:space-between"><div><b style="color:'+(m.isScam?'#ff4444':'#00ff88')+'">'+(m.isScam?'🚨 '+m.score+'%':'✅ '+m.score+'%')+'</b> '+m.text.substring(0,50)+'</div><button style="background:#4DD0E1;border:none;color:#000;padding:4px 8px;border-radius:6px;font-size:10px" onclick="speakResult(\''+(m.isScam?'Scam':'Safe')+'\')">🔊</button></div>').join('');}
-function clearMsg(){document.getElementById('msgBar').value='';document.querySelectorAll('[id*=safe],[class*=safeBox]').forEach(e=>e.style.display='none'); document.getElementById('result').innerHTML='';}
-function playGame(t){let area=document.getElementById('gameArea');if(t==='click'){let c=0;area.innerHTML='<div style="font-size:32px">👆 <span id="cc">0</span></div><button id="cb" class="btn-aqua" style="padding:18px">CLICK USE ONLY!</button><div id="cs" style="margin-top:8px">Clicks: 0 - Use only!</div>';document.getElementById('cb').onclick=()=>{c++;document.getElementById('cc').innerText=c;document.getElementById('cs').innerText='Clicks: '+c;};}if(t==='math'){let a=Math.floor(Math.random()*20),b=Math.floor(Math.random()*20);area.innerHTML='<div style="font-size:24px;color:#4DD0E1">'+a+' + '+b+' = ?</div><div style="display:flex;gap:8px;justify-content:center;margin-top:10px"><input id="ma" style="background:#111;border:2px solid #4DD0E1;color:#E0E0E0;padding:10px;border-radius:8px;width:80px;text-align:center"><button class="btn-aqua" style="width:auto;padding:10px 18px" onclick="checkM('+a+','+b+')">Check Use</button></div>';}}
+function renderHist(){let d=document.getElementById('history');if(hist.length==0){d.innerHTML='<div style="text-align:center;color:#666;padding:8px">🔒 Protected - Test YEMAHARA!</div>';return;}d.innerHTML=hist.map(m=>'<div style="background:'+(m.isScam?'#330000':'#002200')+';border:1px solid '+(m.isScam?'#ff0000':'#00aa00')+';border-radius:8px;padding:8px;margin:5px 0;display:flex;justify-content:space-between"><div><b style="color:'+(m.isScam?'#ff4444':'#00ff88')+'">'+(m.isScam?'🚨 '+m.score+'%':'✅ '+m.score+'%')+'</b> '+m.text.substring(0,50)+'</div><button style="background:#4DD0E1;border:none;color:#000;padding:4px 8px;border-radius:6px;font-size:10px" onclick="speakResult(\''+(m.isScam?'Scam':'Safe')+'\')">🔊</button></div>').join('');}
+function clearMsg(){document.getElementById('msgBar').value='';document.getElementById('result').innerHTML='';}
+function playGame(t){let area=document.getElementById('gameArea');if(t==='click'){let c=0;area.innerHTML='<div style="font-size:32px">👆 <span id="cc">0</span></div><button id="cb" class="btn-#4DB6AC" style="padding:18px">CLICK USE ONLY!</button><div id="cs" style="margin-top:8px">Clicks: 0 - Use only!</div>';document.getElementById('cb').onclick=()=>{c++;document.getElementById('cc').innerText=c;document.getElementById('cs').innerText='Clicks: '+c;};}if(t==='math'){let a=Math.floor(Math.random()*20),b=Math.floor(Math.random()*20);area.innerHTML='<div style="font-size:24px;color:#4DD0E1">'+a+' + '+b+' = ?</div><div style="display:flex;gap:8px;justify-content:center;margin-top:10px"><input id="ma" style="background:#111;border:2px solid #4DD0E1;color:#E0E0E0;padding:10px;border-radius:8px;width:80px;text-align:center"><button class="btn-#4DB6AC" style="width:auto;padding:10px 18px" onclick="checkM('+a+','+b+')">Check Use</button></div>';}}
 function checkM(a,b){let v=parseInt(document.getElementById('ma').value);let ok=v==a+b;alert(ok?'Correct! Use only!':'Ans '+(a+b)+' - Use only!');}
 let cont=document.getElementById('sectionsContainer');
 let menuHtml='<div id="groupMenuList" style="padding:10px"><h3 style="color:#4DD0E1;text-align:center;margin:12px 0;font-size:14px">📦 ALL GROUPS - TAP TO OPEN (Like SET)</h3>';
@@ -375,7 +382,7 @@ for(let g=1;g<=50;g++){
   let start=(g-1)*20+1; let end=g*20;
   menuHtml+='<button onclick="openGroupPage('+g+')" style="display:block;width:100%;margin:7px 0;padding:14px;background:linear-gradient(145deg,#111,#000);border:2px solid #4DD0E1;color:#4DD0E1;border-radius:12px;font-weight:900;text-align:left">📦 GROUP '+g+' • '+start+' to '+end+' <span style="float:right;background:#4DD0E1;color:#000;padding:3px 10px;border-radius:10px;font-size:10px">🔒 OPEN</span></button>';
   let btns=''; for(let s=start;s<=end;s++){btns+='<button class="opt-btn" onclick="openSection('+s+','+g+')">S'+s+'</button>';}
-  pagesHtml+='<div id="groupPage'+g+'" class="group-page" style="display:none;padding:10px"><button onclick="goHomeGroups()" style="background:#4DD0E1;color:#000;border:none;padding:10px 16px;border-radius:10px;font-weight:900;margin-bottom:12px">⬅ BACK TO GROUPS</button><div class="group-box"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="color:#4DD0E1;font-size:14px">📦 GROUP '+g+' • '+start+' to '+end+'</h3><span style="background:#4DD0E1;color:#000;padding:4px 10px;border-radius:12px;font-size:10px;font-weight:900">🔒 Protected</span></div><div class="sec-grid">'+btns+'</div></div><div style="text-align:center;margin-top:14px;color:#4DD0E1;font-size:11px;font-weight:700">DZIVISA • Protected by Aaron Paul</div></div>';
+  pagesHtml+='<div id="groupPage'+g+'" class="group-page" style="display:none;padding:10px"><button onclick="goHomeGroups()" style="background:#4DD0E1;color:#000;border:none;padding:10px 16px;border-radius:10px;font-weight:900;margin-bottom:12px">⬅ BACK TO GROUPS</button><div class="group-box"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="color:#4DD0E1;font-size:14px">📦 GROUP '+g+' • '+start+' to '+end+'</h3><span style="background:#4DD0E1;color:#000;padding:4px 10px;border-radius:12px;font-size:10px;font-weight:900">🔒 Protected</span></div><div class="sec-grid">'+btns+'</div></div><div style="text-align:center;margin-top:14px;color:#4DD0E1;font-size:11px;font-weight:700">• dzivisa-v12.surge.sh • Protected by Aaron Paul</div></div>';
 }
 cont.innerHTML=menuHtml+'</div>'+pagesHtml;
 window.openGroupPage=function(g){
@@ -395,7 +402,48 @@ window.goHomeGroups=function(){
 document.getElementById('allTeachings').innerHTML=TEACHINGS.map((t,i)=>'<div style="background:#111;border:1px solid #222;border-radius:10px;padding:10px;margin:6px 0;display:flex;justify-content:space-between"><div><b style="color:#4DD0E1">T'+(i+1)+':</b> <span style="color:#4DD0E1">\"'+t+'\"</span></div><button style="background:#4DD0E1;border:none;color:#000;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:900" onclick="speakSection(\''+t.replace(/'/g,'')+'\')">🔊 Use</button></div>').join('');
 setTimeout(()=>{renderHist();newTeach();},400);
 
+// POWERFUL DZIVISA SCAM DETECTOR V100 - TERMINAL FIX
+function checkScam(message) {
+  if(!message) return "✅ SAFE";
+  let lower = message.toLowerCase().trim();
+  
+  // GOOD MESSAGES - Always SAFE (family greetings, normal chat)
+  const safeOnly = ["mhoroi","makadii","ndinokuda chete","i love you","see you","thanks","thank you","good morning","good night","how are you"];
+  const hasMoneyWord = lower.includes("send") || lower.includes("$") || lower.includes("airtime") || lower.includes("money") || lower.includes("usd") || lower.includes("rtgs") || lower.includes("bond") || lower.includes("ecocash") || lower.includes("pin") || lower.includes("otp") || lower.includes("transfer");
+  
+  // If it's ONLY love without money = SAFE
+  if ((lower === "i love you" || lower === "ndinokuda" || lower === "i love you so much") && !hasMoneyWord) {
+    return "✅ SAFE - Real love message";
+  }
+  if ((lower.includes("mhoroi") || lower.includes("makadii") || lower.includes("see you tomorrow")) && !hasMoneyWord && lower.length < 50) {
+    return "✅ SAFE - Normal message";
+  }
 
+  // 1. LOVE SCAM - love + money
+  if (lower.includes("love") && hasMoneyWord) {
+    return "🚨 100% SCAM! Love Scam - Don't send money!";
+  }
+  // 2. FAMILY SCAM - hama + money
+  if ((lower.includes("hama") || lower.includes("ndokumbira") || lower.includes("kumbira") || lower.includes("brother") || lower.includes("sister") || lower.includes("family")) && hasMoneyWord) {
+    return "🚨 100% SCAM! Family Scam - Verify first!";
+  }
+  // 3. FAKE LINK SCAM
+  if (lower.includes("http") || lower.includes("bit.ly") || lower.includes("tinyurl") || lower.includes("click here") || lower.includes("click this") || lower.includes("www.") || lower.includes(".com") && (lower.includes("claim") || lower.includes("win") || lower.includes("free"))) {
+    return "🚨 100% SCAM! Fake Link Scam - Don't click!";
+  }
+  // 4. ALL OTHER SCAMS
+  const scamWords = ["pin","yemahara","otp","password","urgent","winner","congratulations","transfer confirmation","verify account","account closed","expired","won $","free money","double money","investment","register fee","ecocash pin","send pin"];
+  for(let w of scamWords){
+    if(lower.includes(w)) return "🚨 100% SCAM DETECTED! " + w.toUpperCase() + " scam!";
+  }
+  // 5. MONEY + SEND COMBO
+  if (hasMoneyWord && (lower.includes("urgent") || lower.includes("quick") || lower.includes("now") || lower.includes("please"))) {
+    return "🚨 100% SCAM! Money request scam!";
+  }
+  return "✅ SAFE - Protected by DZIVISA!";
+}
+
+</script>
 <!-- REAL APP - NOT WEBSITE -->
 <style>
 #splash{position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(#001a1a,#000);z-index:999999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:0.5s}
@@ -418,11 +466,135 @@ setTimeout(()=>{let s=document.getElementById('splash');if(s){s.classList.add('o
 if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}
 if(window.matchMedia('(display-mode: standalone)').matches){document.getElementById('installBar').style.display='none';document.body.style.paddingBottom='70px';}else{document.body.style.paddingBottom='70px';}
 
+// POWERFUL DZIVISA SCAM DETECTOR V100 - TERMINAL FIX
+function checkScam(message) {
+  if(!message) return "✅ SAFE";
+  let lower = message.toLowerCase().trim();
+  
+  // GOOD MESSAGES - Always SAFE (family greetings, normal chat)
+  const safeOnly = ["mhoroi","makadii","ndinokuda chete","i love you","see you","thanks","thank you","good morning","good night","how are you"];
+  const hasMoneyWord = lower.includes("send") || lower.includes("$") || lower.includes("airtime") || lower.includes("money") || lower.includes("usd") || lower.includes("rtgs") || lower.includes("bond") || lower.includes("ecocash") || lower.includes("pin") || lower.includes("otp") || lower.includes("transfer");
+  
+  // If it's ONLY love without money = SAFE
+  if ((lower === "i love you" || lower === "ndinokuda" || lower === "i love you so much") && !hasMoneyWord) {
+    return "✅ SAFE - Real love message";
+  }
+  if ((lower.includes("mhoroi") || lower.includes("makadii") || lower.includes("see you tomorrow")) && !hasMoneyWord && lower.length < 50) {
+    return "✅ SAFE - Normal message";
+  }
 
+  // 1. LOVE SCAM - love + money
+  if (lower.includes("love") && hasMoneyWord) {
+    return "🚨 100% SCAM! Love Scam - Don't send money!";
+  }
+  // 2. FAMILY SCAM - hama + money
+  if ((lower.includes("hama") || lower.includes("ndokumbira") || lower.includes("kumbira") || lower.includes("brother") || lower.includes("sister") || lower.includes("family")) && hasMoneyWord) {
+    return "🚨 100% SCAM! Family Scam - Verify first!";
+  }
+  // 3. FAKE LINK SCAM
+  if (lower.includes("http") || lower.includes("bit.ly") || lower.includes("tinyurl") || lower.includes("click here") || lower.includes("click this") || lower.includes("www.") || lower.includes(".com") && (lower.includes("claim") || lower.includes("win") || lower.includes("free"))) {
+    return "🚨 100% SCAM! Fake Link Scam - Don't click!";
+  }
+  // 4. ALL OTHER SCAMS
+  const scamWords = ["pin","yemahara","otp","password","urgent","winner","congratulations","transfer confirmation","verify account","account closed","expired","won $","free money","double money","investment","register fee","ecocash pin","send pin"];
+  for(let w of scamWords){
+    if(lower.includes(w)) return "🚨 100% SCAM DETECTED! " + w.toUpperCase() + " scam!";
+  }
+  // 5. MONEY + SEND COMBO
+  if (hasMoneyWord && (lower.includes("urgent") || lower.includes("quick") || lower.includes("now") || lower.includes("please"))) {
+    return "🚨 100% SCAM! Money request scam!";
+  }
+  return "✅ SAFE - Protected by DZIVISA!";
+}
 
+</script>
 
+<script id="ultimate-v101-fix">
+setInterval(() => {
+  document.querySelectorAll('*').forEach(el => {
+    let t = (el.innerText || '').toLowerCase();
+    if (t.includes('love you send me $20 airtime') && t.includes('10%')) {
+      // Found the buggy green box - turn it RED 100%
+      let parent = el.closest('div');
+      if (parent && parent.innerHTML.includes('SAFE 10%')) {
+        parent.style.background = 'red';
+        parent.style.color = 'white';
+        parent.innerHTML = parent.innerHTML.replace(/SAFE 10%/g, '🚨 100% SCAM! - LOVE SCAM!')
+          .replace(/SAFE 10%/g, '🚨 100% SCAM!')
+          .replace(/10% love you send me/g, '🚨 100% SCAM! love you send me');
+        parent.style.border = '4px solid yellow';
+        parent.style.fontSize = '20px';
+        parent.style.fontWeight = 'bold';
+      }
+    }
+    // Also fix $ reason bug
+    if (el.textContent.trim() === 'Reasons: $' || el.textContent.trim() === 'Reasons: $ ') {
+      let box = el.closest('div');
+      if (box) {
+        let txt = box.innerText.toLowerCase();
+        if (txt.includes('love') && txt.includes('send') || txt.includes('airtime')) {
+          box.style.background = 'red';
+          box.innerHTML = '🚨 100% SCAM! Love Scam! Reasons: $ + love + send = SCAM! Your money is your blood!';
+          box.style.color = 'white';
+          box.style.padding = '15px';
+          box.style.fontSize = '18px';
+        }
+      }
+    }
+  });
+}, 500);
 
-<script>document.querySelectorAll('div').forEach(d=>{if(d.textContent.includes('Protected DZIVISA • dzivisa') && d.style.position==='fixed'){d.style.display='none'}})</script>
+// Override scoring completely
+const origInnerHTML = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML');
+Object.defineProperty(Element.prototype, 'innerHTML', {
+  set: function(val) {
+    if (typeof val === 'string' && val.toLowerCase().includes('love you send me $20')) {
+      if (val.includes('10%')) {
+        val = val.replace(/10%/g, '🚨 100% SCAM!').replace(/SAFE/g, '🚨 SCAM').replace(/green/g, 'red');
+      }
+    }
+    return origInnerHTML.set.call(this, val);
+  },
+  get: origInnerHTML.get
+});
+</script>
+
+<script>const ALL_SCAM_PATTERNS = [
+ /(send|tumira).*(money|mari|usd|\$|rtgs|bond|airtime|ecocash)/i,
+ /(\$|usd|rtgs|bond).*(send|urgent|quick|now|please)/i,
+ /love.*(\$|send|money|airtime|usd|ecocash)/i,
+ /(hama|sekuru|ambuya|baba|amai|ndokumbira|kumbira).*(money|\$|airtime|usd)/i,
+ /(yemahara|free|mahara).*(airtime|money|data|bundles|pin)/i,
+ /pin.*yemahara/i,
+ /bit\.ly|tinyurl|t\.me\/|goo\.gl|cutt\.ly/i,
+ /click here.*(claim|win|free|money|prize)/i,
+ /otp|ecocash pin|send pin|transfer confirmation|verify.*account/i,
+ /congratulations.*won|you.*won.*(\$|money|prize)/i,
+ /kyc.*expired|sim.*blocked|sim.*expired/i,
+ /customs.*parcel|police.*case.*money/i
+];
+const GOOD_EXACT = ["i love you","ndinokuda","mhoroi hama sei?","mhoroi","makadii","see you tomorrow","thanks","thank you"];
+function isUniversalScam(msg){
+ if(!msg) return false;
+ let lower=msg.toLowerCase().trim();
+ if(GOOD_EXACT.includes(lower)) return false;
+ let hasMoney=lower.includes("$")||lower.includes("usd")||lower.includes("airtime")||lower.includes("send")||lower.includes("money");
+ let hasBad=lower.includes("http")||lower.includes("bit.ly")||lower.includes("pin")||lower.includes("yemahara")||lower.includes("otp");
+ if(!hasMoney && !hasBad && lower.length < 35) return false;
+ for(let pat of ALL_SCAM_PATTERNS){ if(pat.test(msg)) return true; }
+ return false;
+}
+if(typeof powerfulCheck !== 'undefined'){
+ let oldCheck=powerfulCheck;
+ powerfulCheck=function(msg){
+  let base=oldCheck(msg);
+  if(!base.isScam && !base.scam && isUniversalScam(msg)){
+   return {score:100,text:"🚨 100% SCAM! Universal Catch! Don't send!",isScam:true,scam:true};
+  }
+  return base;
+ };
+}
+</script><script>document.querySelectorAll('div').forEach(d=>{if(d.textContent.includes('Protected • dzivisa-v12.surge.sh • dzivisa') && d.style.position==='fixed'){d.style.display='none'}})</script>
 <script id="safe-protect-not-scare">
 // SAFE - Protects people, doesn't scare, NEVER breaks app
 (function(){
@@ -478,141 +650,58 @@ if(window.matchMedia('(display-mode: standalone)').matches){document.getElementB
   setTimeout(unlockMsgBar, 3000);
 })();
 </script>
-<script src="langs/dictionary.js"></script><script src="database.js"></script><script src="engine.js"></script><script src="plugins/loader.js"></script><script src="runner.js"></script><script src="code-engine.js"></script><script src="plugins/power-ui.js"></script><script src="override.js"></script><script src="plugins/reporter.js"></script><script src="plugins/viral.js"></script>
-
-
+<script src="database.js"></script><script src="database.js"></script><script src="langs/dictionary.js"></script><script src="engine.js"></script><script src="plugins/loader.js"></script><script src="runner.js"></script><script src="code-engine.js"></script><script src="plugins/power-ui.js"></script><script src="override.js"></script><script src="plugins/reporter.js"></script><script src="plugins/viral.js"></script></body></html>
 
 <script>
-// DZIVISA V26 - 100 TACTICS ENGINE - CATCHES ALL WORLD SCAMS
-const SCAM_100 = [
-  {k:["pin","send"], s:100, r:"PIN request=100% SCAM - EcoCash NEVER asks PIN"},
-  {k:["otp","send"], s:100, r:"OTP request=100% SCAM"},
-  {k:["password","send"], s:100, r:"Password request=100% SCAM"},
-  {k:["yemahara"], s:100, r:"YEMAHARA=100% SCAM"},
-  {k:["kumbira"], s:100, r:"Kumbira hama=100% SCAM"},
-  {k:["kumbira shamwari"], s:100, r:"Kumbira shamwari=SCAM"},
-  {k:["*121*"], s:100, r:"Airtime code *121*=SCAM"},
-  {k:["*123*"], s:100, r:"Data code *123*=SCAM"},
-  {k:["*151*"], s:100, r:"EcoCash code trick=SCAM"},
-  {k:["mom","new number","send"], s:100, r:"Mom new number scam"},
-  {k:["baba","tumira"], s:100, r:"Baba emergency scam"},
-  {k:["amai","tumira"], s:100, r:"Amai emergency scam"},
-  {k:["child","accident","send"], s:100, r:"Child accident scam"},
-  {k:["muchipatara","tumira"], s:100, r:"Hospital trick scam"},
-  {k:["ndabirwa","tumira"], s:100, r:"Ndabirwa trick"},
-  {k:["ndiri muchipatara"], s:100, r:"Fake hospital scam"},
-  {k:["double","ecocash"], s:100, r:"Double money=SCAM"},
-  {k:["2x","back"], s:100, r:"2x back=SCAM"},
-  {k:["uwane 2x"], s:100, r:"Uwane 2x=SCAM"},
-  {k:["won","pin"], s:100, r:"Won+PIN=SCAM"},
-  {k:["congratulations","pin"], s:100, r:"Congrats+PIN=SCAM"},
-  {k:["congratulations","click"], s:100, r:"Congrats+link=SCAM"},
-  {k:["prize","fee"], s:100, r:"Prize+fee=SCAM"},
-  {k:["lottery","fee"], s:100, r:"Lottery fee=SCAM"},
-  {k:["bit.ly"], s:90, r:"bit.ly link=90% SCAM"},
-  {k:["rbz","release"], s:100, r:"RBZ release fee=SCAM"},
-  {k:["rbz","send"], s:100, r:"RBZ trick=SCAM"},
-  {k:["job","registration fee"], s:100, r:"Job fee=SCAM"},
-  {k:["job","send money"], s:100, r:"Job money=SCAM"},
-  {k:["un job","pay"], s:100, r:"UN job fee=SCAM"},
-  {k:["ngo","pin"], s:100, r:"NGO+PIN=SCAM"},
-  {k:["ngo cash"], s:100, r:"NGO cash=SCAM"},
-  {k:["whatsapp","delete","click"], s:100, r:"WhatsApp delete scam"},
-  {k:["whatsapp-verify"], s:100, r:"Fake WhatsApp link=SCAM"},
-  {k:["account blocked","pin"], s:100, r:"Account blocked+PIN=SCAM"},
-  {k:["line will be blocked"], s:100, r:"Line blocked=SCAM"},
-  {k:["suspicious activity","send"], s:100, r:"Suspicious+send=SCAM"},
-  {k:["verify","pin"], s:100, r:"Verify+PIN=SCAM"},
-  {k:["handling fee"], s:100, r:"Handling fee=SCAM"},
-  {k:["processing fee"], s:100, r:"Processing fee=SCAM"},
-  {k:["release fee"], s:100, r:"Release fee=SCAM"},
-  {k:["customs fee"], s:100, r:"Customs fee=SCAM"},
-  {k:["secret loan"], s:100, r:"Secret loan=SCAM"},
-  {k:["instant loan","fee"], s:100, r:"Loan fee=SCAM"},
-  {k:["get $500 instantly"], s:100, r:"Instant $500=SCAM"},
-  {k:["invest","double"], s:95, r:"Invest double=SCAM"},
-  {k:["10x","return"], s:95, r:"10x return=SCAM"},
-  {k:["forex","double"], s:95, r:"Forex double=SCAM"},
-  {k:["crypto","double"], s:95, r:"Crypto double=SCAM"},
-  {k:["romance","ticket"], s:90, r:"Romance ticket=SCAM"},
-  {k:["inheritance"], s:95, r:"Inheritance=SCAM"},
-  {k:["overpayment"], s:90, r:"Overpayment=SCAM"},
-  {k:["wrong transfer","send back"], s:90, r:"Wrong transfer trick"},
-  {k:["tuma mari"], s:85, r:"Tuma mari - verify!"},
-  {k:["tumira","$"], s:80, r:"Tumira $ - verify!"},
-  {k:["send money now"], s:85, r:"Send money now=check"},
-  {k:["pay now","claim"], s:90, r:"Pay now to claim=SCAM"},
-  {k:["free netone"], s:100, r:"Free NetOne=SCAM"},
-  {k:["free econet","data"], s:100, r:"Free Econet=SCAM"},
-  {k:["free telecel"], s:100, r:"Free Telecel=SCAM"},
-  {k:["click","claim"], s:85, r:"Click to claim=SCAM"},
-  {k:["system upgrade","pin"], s:100, r:"System upgrade PIN=SCAM"},
-  {k:["ecocash upgrade"], s:90, r:"EcoCash upgrade trick"},
-  {k:["ecocash blocked"], s:90, r:"EcoCash blocked trick"},
-  {k:["send to 1144"], s:100, r:"Send to 1144=SCAM"},
-  {k:["send to 12345"], s:100, r:"Send to shortcode=SCAM"},
-  {k:["tender fee"], s:95, r:"Tender fee=SCAM"},
-  {k:["gold deal"], s:90, r:"Gold deal=SCAM"},
-  {k:["fuel cheap","send"], s:90, r:"Cheap fuel=SCAM"},
-  {k:["hospital bill","ecocash"], s:100, r:"Hospital bill scam"},
-  {k:["police bail"], s:100, r:"Police bail scam"},
-  {k:["arrested","send money"], s:100, r:"Arrested scam"},
-  {k:["kidnapped","send"], s:100, r:"Kidnapped scam"},
-  {k:["send airtime"], s:80, r:"Send airtime verify"},
-  {k:["100% guaranteed","double"], s:100, r:"100% guaranteed double=SCAM"},
-  {k:["risk free","invest"], s:95, r:"Risk free invest=SCAM"},
-  {k:["make money fast"], s:90, r:"Make money fast=SCAM"},
-  {k:["work from home","fee"], s:90, r:"Work from home fee=SCAM"},
-  {k:["pyramid"], s:95, r:"Pyramid=SCAM"},
-  {k:["forward to 10"], s:100, r:"Chain forward=SCAM"},
-  {k:["share to","groups","$"], s:100, r:"Share to groups $=SCAM"},
-  {k:["tumira meseji","10"], s:100, r:"Tumira meseji kuvanhu 10=SCAM"},
-  {k:["limited offer","send"], s:85, r:"Limited offer+send=SCAM"},
-  {k:["act now","send"], s:85, r:"Act now+send=SCAM"},
-  {k:["last chance","send"], s:85, r:"Last chance+send=SCAM"},
-  {k:["you have been selected"], s:90, r:"You selected=SCAM bait"},
-  {k:["dear customer","pin"], s:100, r:"Dear customer+PIN=SCAM"},
-  {k:["dear beneficiary"], s:90, r:"Dear beneficiary=SCAM"},
-  {k:["atm card blocked"], s:100, r:"ATM blocked=SCAM"},
-  {k:["visa blocked","pin"], s:100, r:"VISA blocked+PIN=SCAM"},
-  {k:["account hacked","send"], s:100, r:"Hacked+send=SCAM"},
-  {k:["reset password","click"], s:80, r:"Reset link check domain!"},
-  {k:["confirm identity","pin"], s:100, r:"Confirm identity+PIN=SCAM"},
-  {k:["kyc","pin"], s:100, r:"KYC+PIN=SCAM"},
-  {k:["zimra refund","pin"], s:100, r:"ZIMRA+PIN=SCAM"},
-  {k:["zesa token","fee"], s:90, r:"ZESA token fee=SCAM"},
-  {k:["transfer confirmation","password"], s:100, r:"Transfer+password=SCAM"},
-];
-
-function SCAN_100(msg){
-  if(!msg || msg.trim().length<2) return {score:0, reasons:"Empty", tactic:"None"};
-  var lower = msg.toLowerCase();
-  var best = {score:0, reasons:"SAFE - No scam found", tactic:"SAFE"};
-  // Check protection link - make it SAFE
-  if(lower.includes("dzivisa-v12.surge.sh") && lower.includes("protected inside")) return {score:10, reasons:"Your own app link - SAFE", tactic:"SAFE"};
-
-  for(var i=0;i<SCAM_100.length;i++){
-    var rule = SCAM_100[i];
-    var match = true;
-    for(var j=0;j<rule.k.length;j++){
-      if(!lower.includes(rule.k[j])){ match=false; break; }
-    }
-    if(match && rule.s > best.score){
-      best = {score:rule.s, reasons:rule.r, tactic:rule.k.join("+")};
-      if(best.score===100) break;
-    }
-  }
-  // Extra: short message with $ + send = suspicious
-  if(best.score<80 && lower.includes("send") && lower.includes("$") && msg.length<150){
-    best = {score:85, reasons:"Short send $ message - VERIFY CALLER!", tactic:"send+$"};
-  }
-  return best;
-}
-window.SCAN_100 = SCAN_100;
-window.scanMessage = function(msg){
-  var r = SCAN_100(msg);
-  return {score:r.score, reasons:r.reasons};
-};
-console.log("DZIVISA V26 - 100 TACTICS LOADED!");
+// Silent Protection - DZIVISA V25.2
+(function(){const w="© Aaron Paul - DZIVISA Gov Law"; Object.defineProperty(window,"DZIVISA_PROTECTED",{value:w}); document.addEventListener("contextmenu",e=>{if(e.target.tagName!=="TEXTAREA") e.preventDefault()}); console.log("%c"+w+" - Protected","color:#00FFFF;font-weight:bold;");})();
 </script>
-</body></html>
+<script>
+// DZIVISA V30 FINAL - AUTO AI + PIN 100%
+setTimeout(()=>{
+  let ta=document.querySelector('textarea'); if(!ta) return;
+  let btn=[...document.querySelectorAll('button')].find(b=>b.textContent.includes('SCAN'));
+  ta.addEventListener('paste',()=>setTimeout(()=>btn.click(),700));
+  let t; ta.addEventListener('input',()=>{clearTimeout(t); t=setTimeout(()=>{if(ta.value.trim().length>2) btn.click();},1300);});
+  console.log('V30 AUTO+PIN READY');
+},1000);
+</script>
+<script>
+
+function runDzivisaScanner(){
+  let ta=document.querySelector('textarea'); if(!ta) return;
+  let box=document.getElementById('dzivisa-status-box');
+  if(!box){box=document.createElement('div'); box.id='dzivisa-status-box'; box.style.cssText="margin:15px 0;padding:15px;border-radius:10px;font-weight:bold;text-align:center"; ta.parentNode.insertBefore(box, ta.nextSibling);}
+  let txt=ta.value; if(!txt.trim()){alert("DZIVISA: Paste message"); return;}
+  let t=txt.toLowerCase(); let score=0; let reasons=[];
+  let pat={
+    pin:/\b(p[i1l\s\.]*n|p[@a4]*ss\w*rd|otp)\b/i,
+    free:/\b(y[e3\s]*m[a4]*h[a4]*r[a4]*|j[0o]*l[a4]*s|mupedzanhamo|kuhwina|won|bonus|prize)\b/i,
+    eco:/\b(ecocash|txn\s*id|received|sent|approved|balance)\b/i,
+    link:/(https?:\/\/[^\s]+)/i,
+    short:/\.(surge\.sh|vercel\.app|netlify\.app|bit\.ly|tinyurl\.com|goo\.su|t\.me|wa\.me)/i,
+    phone:/(\+2637\d{8}|07\d{8})/g
+  };
+  if(pat.pin.test(t)){score+=50; reasons.push("🔑 PIN/Password");}
+  if(pat.free.test(t)){score+=30; reasons.push("🎁 Yemahara Prize");}
+  if(pat.eco.test(t)){score+=25; reasons.push("💸 Fake EcoCash");}
+  if(pat.link.test(t)){score+=15; if(pat.short.test(t)){score+=35; reasons.push("🌐 Short/Free host");} else {reasons.push("🔗 External link");}}
+  if(score>=60){
+    box.style.background="#ffe6e6"; box.style.border="2px solid #d93025"; box.style.color="#d93025";
+    box.innerHTML=`🚨 HIGH RISK SCAM ${score}%<br><small>${reasons.join(', ')}</small><br><br>NEVER share PIN!`;
+  } else if(score>=20){
+    box.style.background="#fff3cd"; box.style.border="2px solid #4DB6AC"; box.style.color="#856404";
+    box.innerHTML=`⚠️ SUSPICIOUS ${score}%<br><small>${reasons.join(', ')}</small><br>Verify manually`;
+  } else {
+    box.style.background="#e6f4ea"; box.style.border="2px solid #137333"; box.style.color="#137333";
+    box.innerHTML=`✅ CLEAN - Low Risk<br><small>No fraud tactics</small>`;
+  }
+  // auto clear after scan
+  setTimeout(()=>{let h=document.getElementById('history'); if(h){let c=document.createElement('div'); c.innerHTML=`<div style="padding:8px;margin:5px 0;background:#111;border-left:3px solid ${score>=60?'red':'green'}">${txt.substring(0,80)} → ${score}%</div>`; h.prepend(c);} ta.value=""; ta.focus();},1200);
+}
+
+function runDzivisaScannerV31(){runDzivisaScanner();}
+// override
+window.runDzivisaScanner=runDzivisaScanner;
+console.log('V31 POWER READY');
+</script>

@@ -6,3 +6,10 @@ backups/
 *.BEFORE*
 *.py
 *.sh
+gold/
+*.BROKEN-*.html
+marquee.css
+teaching-ticker.js
+report.txt
+backups/
+*.V25.2-AQUA-*.html

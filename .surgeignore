@@ -7,3 +7,9 @@ index.html.V25*
 FINAL_SUBMISSION.txt
 *.py
 *.sh
+gold/
+*.BROKEN-*.html
+marquee.css
+teaching-ticker.js
+report.txt
+backups/

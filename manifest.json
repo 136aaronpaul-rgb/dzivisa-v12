@@ -1,5 +1,5 @@
 {
-  "name": "DZIVISA V30 FINAL AUTO PIN",
+  "name": "DZIVISA V13.7 GOLD AUTO PIN",
   "short_name": "DZIVISA",
   "start_url": "./index.html",
   "display": "standalone",
@@ -17,5 +17,5 @@
       "type": "image/png"
     }
   ],
-  "version": "1787410404"
+  "version": "1787899664"
 }

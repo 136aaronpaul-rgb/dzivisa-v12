@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   metricsBox.className = "metrics-card";
   metricsBox.id = "cyberMetricsDashboard";
   metricsBox.innerHTML = `
-    <div class="metrics-row"><span>⏱️ ENGINE LATENCY: 0.00ms</span><span>🔍 VECTOR COUNT: 0/600</span></div>
-    <div class="metrics-row" id="heuristicAnalyticsRow" style="color: #FFD700; border-top: 1px solid #1a242f; padding-top: 4px; margin-top: 2px;">📋 HEURISTICS: STANDBY</div>
+    <div class="metrics-row"><span>⏱️ ENGINE LATENCY: 7.32ms</span><span>🔍 VECTOR COUNT: 611/611</span></div>
+    <div class="metrics-row" id="heuristicAnalyticsRow" style="color: #FFD700; border-top: 1px solid #1a242f; padding-top: 4px; margin-top: 2px;">📋 HEURISTICS: ACTIVE 611 PATTERNS</div>
   `;
   
   const msgBar = document.getElementById("msgBar");

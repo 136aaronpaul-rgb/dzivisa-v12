@@ -1,0 +1,9 @@
+backups
+*.BEFORE*
+*BACKUP*
+*.SAFETY*
+*.backup-*
+index.html.V25*
+FINAL_SUBMISSION.txt
+*.py
+*.sh

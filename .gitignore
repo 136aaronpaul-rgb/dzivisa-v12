@@ -2,3 +2,7 @@
 *.LOCKED-BACKUP
 *PERMANENT-FINAL-STRONG*
 BACKUP-*/
+backups/
+*.BEFORE*
+*.py
+*.sh
